@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/menu.css">
+    <link rel="stylesheet" href="static/css/about.css">
+    <link rel="stylesheet" href="static/css/dark.css">
+</head>
+<body id="body">
+
+<main>
+    <header id="header_content" class="header_content">
+        <div class="container">
+            <div class="wrapper animated">
+                <div class="offer animated fadeInLeft">
+                    <h1 class="title">
+                        Добро пожаловать!<br>
+                        Это мой сайт
+                    </h1>
+                    <p class="intro">
+                        Мои стремления + настойчивость позволят мне достичь чего угодно.
+                        Я не останавлюсь.
+                    </p>
+                </div>
+                <img src="static/img/prog_light.png" alt="Code desktop" class="desktop animated">
+            </div>
+        </div>
+    </header>
+
+
+    <section id="learn" class="learn">
+        <div class="container">
+            <h2 class="section-title animated">Почему стоит выбрать именно меня?</h2>
+            <div class="skills bear">
+                <div class="skill">
+                    <img src="static/img/clock.png" alt="no image" class="icon">
+                    <h3 class="skill-title">
+                        Свободное время
+                    </h3>
+                    <p class="skill-text">
+                        Быстрее, а то закончится
+                    </p>
+                </div>
+                <div class="skill skill-free">
+                    <img src="static/img/ent.png" alt="no image" class="icon">
+                    <h3 class="skill-title">
+                        Энтузиазм
+                    </h3>
+                    <p class="skill-text">
+                        Я люблю программировать, и готов решать сложные задачи.
+                    </p>
+                </div>
+                <div class="skill skill-change">
+                    <img src="static/img/leprikon.png" alt="no image" class="icon">
+                    <h3 class="skill-title">
+                        Желание
+                    </h3>
+                    <p class="skill-text">
+                        Я хочу попасть на проект.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="mail" class="mail">
+        <div class="container">
+            <h2 class="section-title animated">Немного о авторе</h2>
+
+            <section id="auth" class="center">
+                <div class="form_box">
+                    <section class="face_and_git">
+                        <img src="static/img/creator.png" width="300" height="450" class="border">
+                        <div id="interactive_info">
+                            <div class="box center">
+                                <img src="static/img/prof.png" alt="">
+                                <div>
+                                    <p class="user_name">Гаврилов Константин</p>
+                                    <p class="skill_me">Back-end developer</p>
+                                </div>
+                                <div class="left_container off">
+                                    <p>Skills</p>
+                                    <div class="skills_me">
+                                        <div>Html</div>
+                                        <div>Css</div>
+                                        <br>
+                                        <div>Python</div>
+                                        <div>PHP</div>
+                                    </div>
+                                    <p>Мой github</p>
+                                    <div>
+                                        <button onclick="open_git()" class="git_but">GitHub</button>
+                                    </div>
+                                </div>
+                                <div class="cancel center">
+                                    <button type="submit" onclick="open_info();" class="image_button1 but_open">
+                                        <b>Open</b>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="face_and_git">
+                        <ul>
+                            <li class="label_info">Фамилия: Гаврилов</li>
+                            <li class="label_info">Имя: Константин</li>
+                            <li class="label_info">Отчество: Владимирович</li>
+                            <li class="label_info">Город: Чебоксары</li>
+                            <li class="label_info">Возраст: 17 лет</li>
+                            <li class="label_info">Школа: МБОУ СОШ№20</li>
+                        </ul>
+                        <textarea class="about_text" disabled>
+                        </textarea>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </section>
+</main>
+
+<aside id="aside" class="aside">
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox"/>
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+        <ul class="menu__box">
+            <li><a class="menu__item" href="#">Главная</a></li>
+            <li><a class="menu__item" href="#">Таймер</a></li>
+            <li><a class="menu__item" href="#">Записная книжка</a></li>
+            <li><a id="theme" class="menu__item" href="#">Смена темы</a></li>
+            <li><a class="menu__item" href="#">Обо мне</a></li>
+        </ul>
+    </div>
+</aside>
+
+<footer id="footer" class="footer">
+    <div class="container">
+        <p class="credits">
+            © Если возникли проблемы с авторскими правами, свяжитесь со мной
+        </p>
+    </div>
+</footer>
+
+<script src="static/js/main.js"></script>
+<script src="static/js/dark.js"></script>
+
+</body>
+</html>
